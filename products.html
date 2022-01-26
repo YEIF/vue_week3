@@ -190,7 +190,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+            <button type="button" class="btn btn-outline-secondary" @click="closeModal">
               取消
             </button>
             <template v-if="isNew">
@@ -223,10 +223,10 @@
             <strong class="text-danger"></strong> 商品(刪除後將無法恢復)。
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+            <button type="button" class="btn btn-outline-secondary" @click="closeModal">
               取消
             </button>
-            <button type="button" class="btn btn-danger" @click="delProduct()">
+            <button type="button" class="btn btn-danger" @click="delProduct">
               確認刪除
             </button>
           </div>
